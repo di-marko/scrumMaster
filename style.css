@@ -1,3 +1,10 @@
+:root {
+  --main-clr: rgba(240, 240, 240, 1);
+  --txt-clr: #fff;
+  --p-clr: #333;
+  --box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 2px 2px 5px rgba(200, 200, 200, 1);
+}
+
 *,
 *::after,
 *::before {
@@ -7,16 +14,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.05rem;
+}
+
 h1 {
-  font-size: 7vw;
+  font-size: 6vw;
 }
 
 body {
   height: 100vh;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
+  background: var(--main-clr);
 }
 
 header {
@@ -36,16 +56,30 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 35px 0;
+  padding: 0 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
+  align-items: center;
   justify-content: space-between;
 }
 
 .navbar ul li a {
+  display: flex;
+  justify-content: flex-start;
   text-decoration: none;
+  font-size: 14px;
   padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.4s;
+}
+
+.navbar ul li a:hover {
+  color: rgb(42, 127, 194);
 }
