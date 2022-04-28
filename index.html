@@ -14,7 +14,7 @@
     <title>scrumMaster</title>
   </head>
   <body>
-    <header>
+    <header id="topPage">
       <h1>scrumMaster</h1>
       <nav class="navbar">
         <ul class="nav-list">
@@ -32,13 +32,13 @@
             <a href="#backlog">Scrum artifacts</a>
           </li>
           <li class="nav-item">
-            <a href="#">Sprint Review</a>
+            <a href="#sprintReview">Sprint Review</a>
           </li>
           <li class="nav-item">
-            <a href="#">Sprint Retrospective</a>
+            <a href="#sprintRetrospective">Sprint Retrospective</a>
           </li>
           <li class="nav-item">
-            <a href="#">Agile estimation</a>
+            <a href="#agileEst">Agile estimation</a>
           </li>
         </ul>
       </nav>
@@ -125,7 +125,7 @@
         </p>
       </section>
 
-      <section id="sprint" class="content sprin">
+      <section id="sprint" class="content sprint">
         <h2>Sprint</h2>
         <p>
           It is like a living organism with it's own breathing rhythm. This rhythm is usually between 2 to 4 weeks,
@@ -141,6 +141,35 @@
           A Product Owner presents main idea of what has to be done and the Development Team creates a plan from the
           next Sprint.
         </p>
+      </section>
+
+      <section id="sprintReview" class="content sprintReview">
+        <h2>Sprint Review</h2>
+        <p>
+          During this stage the Product Owner with the Scrum Team present the sprint results to the customers or
+          stakeholders.
+        </p>
+      </section>
+
+      <section id="sprintRetrospective" class="content sprintRetrospective">
+        <h2>Sprint Retrospective</h2>
+        <p>
+          This stage is done right after the Sprint Review where the Scrum Master sees over what can be improved for the
+          next Sprint, such as team collaboration.
+        </p>
+      </section>
+
+      <section id="agileEst" class="content agileEst">
+        <h2>Agile Estimation</h2>
+        <p>
+          As the name leads, this is where the Scrum Team estimates time necessary to complete tasks in the product
+          backlog.
+        </p>
+      </section>
+
+      <section class="content topPage">
+        <img id="helloGif" src="./images/helloGif.gif" alt="hello gif" />
+        <a class="links" href="#topPage">Back to Top</a>
       </section>
     </main>
     <footer>

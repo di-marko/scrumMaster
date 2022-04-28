@@ -127,9 +127,24 @@ span {
   grid-gap: 30px;
 }
 
-.card {
+.card,
+.topPage {
   padding: 25px;
   box-shadow: var(--box-shadow);
   background: var(--main-clr);
-  transition: 0.2s;
+}
+
+.topPage {
+  text-align: center;
+}
+
+.topPage {
+  position: relative;
+}
+
+#helloGif {
+  position: absolute;
+  width: 100px;
+  right: 15px;
+  top: -75px;
 }
