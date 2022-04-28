@@ -20,11 +20,18 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
 }
 
 h1 {
   font-size: 6vw;
+}
+
+h2 {
+  padding: 0 10px;
+  color: var(--txt-clr);
+  text-transform: uppercase;
+  background-color: var(--p-clr);
 }
 
 body {
@@ -57,7 +64,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 35px 0;
+  margin: 25px 0;
   padding: 0 10px;
   box-shadow: var(--box-shadow);
 }
